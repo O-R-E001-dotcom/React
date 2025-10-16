@@ -1,0 +1,12 @@
+.app {
+  font-family: "Inter", sans-serif;
+  margin: 15px;
+  padding: 10px;
+  background: linear-gradient(80deg, green 30%, green 10%, white 20%, white 70%, green 70%, green 100%);
+  color: black;
+}
+
+footer {
+  background-color: white;
+  padding: 2px;
+}
