@@ -4,12 +4,12 @@
   padding: 8px;
   background: linear-gradient(80deg, green 30%, green 10%, white 20%, white 70%, green 70%, green 100%);
   color: black;
-  
 }
 
 header {
   padding: 2px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 header h1 {
@@ -17,17 +17,27 @@ header h1 {
 }
 header p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 section {
-  margin: 7rem;
+  margin: 0 7rem;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+section ol {
+  margin-bottom: 0;
 }
 
 .location {
-  margin: 7rem;
+  margin: 2rem 7rem;
 }
 
 .location h2 {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -37,7 +47,7 @@ section {
 
 }
 footer {
-  background: linear-gradient(80deg, white 30%, white 10%, rgb(127, 171, 127) 20%, rgb(108, 158, 108) 72%, white 70%, white 100%);
+  background: linear-gradient(80deg, white 30%, white 20%, rgb(127, 171, 127) 50%, rgb(108, 158, 108) 72%, white 70%, white 100%);
   padding: 2px;
   text-align: center;
   color: rgb(48, 37, 37);
