@@ -1,0 +1,38 @@
+
+* {
+    padding: 0;
+    margin: 5px ;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 2px 5px rgba(58, 47, 47, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  text-align: center;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  gap: 5px;
+  
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  
+}
+
+.overlay {
+    background-color: gray;
+    opacity: 0.5;
+}
