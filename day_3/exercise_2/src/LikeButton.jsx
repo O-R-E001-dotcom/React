@@ -55,7 +55,7 @@ function LikeButton() {
         <div style={{ textAlign: "start", margin: "32px 20px" }}>
             <h2>Like Button</h2>
             <p style={{ fontSize: "16px", marginTop: "10px" }}>
-                 [❤️ Liked] {likeCount} like
+                 {liked ? "❤️ Liked" : "🤍 Like"} {likeCount} like
             </p>
             <button
                 onClick={toggleLike}

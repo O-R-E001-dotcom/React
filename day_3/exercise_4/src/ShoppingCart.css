@@ -1,0 +1,38 @@
+
+.shopping-app{
+    /* padding: 20px ; */
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #f7f4f4;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px
+}
+     
+.button {
+    background-color: #c4bac0;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 11px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 25%;
+}
+
+.button:hover {
+  background-color: #e65699;
+}
+                
