@@ -9,14 +9,14 @@ function ColorPicker() {
         setColor((prev) => ({ ...prev, [colorChannel]: value }));
     };
 
-    const rgbToHex = (r, g, b) =>
-        "#" +
-        [r, g, b].map((x) => {
+    function rgbToHex(r, g, b) {
+        "#" + [r, g, b].map((x) => {
             const hex = parseInt(x).toString(16);
             return hex.length === 1 ? "0" + hex : hex;
         }).join("").toUpperCase();
+    }
 
-    const hexColor = rgbToHex(color.r, color.g, color.b);
+        const hexColor = rgbToHex(color.r, color.g, color.b);
 
     return (
         <div style={{ textAlign: "center", fontFamily: "Arial", marginTop: "40px" }}>
