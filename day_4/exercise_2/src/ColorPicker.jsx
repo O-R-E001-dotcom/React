@@ -5,8 +5,8 @@ import ColorDisplay from "./ColorDisplay";
 function ColorPicker() {
     const [color, setColor] = useState({ r: 255, g: 100, b: 50 });
 
-    function handleChange(channel, value) {
-        setColor((prev) => ({ ...prev, [channel]: value }));
+    function handleChange(colorChannel, value) {
+        setColor((prev) => ({ ...prev, [colorChannel]: value }));
     };
 
     const rgbToHex = (r, g, b) =>
