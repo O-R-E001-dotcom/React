@@ -26,18 +26,18 @@ function LikeButton() {
     const [disabled, setDisabled] = useState(false);
 
 
-    function toggleLike () {
-    setDisabled(true);
+    function toggleLike() {
+        setDisabled(true);
 
-    if (liked) {
-      setLiked(false);
-      setLikeCount(prevCount => prevCount - 1);
+        if (liked) {
+        setLiked(false);
+        setLikeCount(prevCount => prevCount - 1);
 
-    } else {
-      setLiked(true);
-      setLikeCount(prevCount => prevCount + 1);
+        } else {
+        setLiked(true);
+        setLikeCount(prevCount => prevCount + 1);
 
-    }
+        }
 
     // setDisabled(false);
     // if (unLiked) {
@@ -48,7 +48,7 @@ function LikeButton() {
     //     setUnLikedCount(prevCount => prevCount - 1);
     // }
 
-    setTimeout(() => setDisabled(false), 1000);
+        setTimeout(() => setDisabled(false), 1000);
     };
 
     return (
@@ -61,12 +61,12 @@ function LikeButton() {
                 onClick={toggleLike}
                 disabled={disabled}
                 style={{
-                backgroundColor: liked ? "#ff4d4d" : "#e0e0e0",
+                backgroundColor: liked ? "#c21919ff" : "#e0e0e0",
                 color: liked ? "white" : "black",
                 borderRadius: "8px",
                 padding: "10px 20px",
                 fontSize: "18px",
-                cursor: disabled ? "not-allowed" : "pointer",
+                cursor: disabled ? "" : "pointer",
                 transition: "0.3s ease",
                 }}
                 liked = {liked ? "❤️ Liked" : "🤍 unliked"}
@@ -75,7 +75,7 @@ function LikeButton() {
             </button>
 
             <p style={{ fontSize: "16px", marginTop: "10px" }}>
-                {disabled} [🤍 Like] likes
+                {!liked ? "🤍 Like": ""} {disabled} like
             </p>
         </div>
     );

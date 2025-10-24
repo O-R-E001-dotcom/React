@@ -5,7 +5,6 @@ function FahrenheitInput({ value, onChange }) {
           Fahrenheit:
           <input
             type="number"
-            placeholder="fahrenheit"
             value={value}
             onChange={(e) => onChange(e.target.value)}
             style={{

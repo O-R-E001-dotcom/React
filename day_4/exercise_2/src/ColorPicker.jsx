@@ -5,7 +5,7 @@ import ColorDisplay from "./ColorDisplay";
 function ColorPicker() {
     const [color, setColor] = useState({ r: 255, g: 100, b: 50 });
 
-    const handleChange = (channel, value) => {
+    function handleChange(channel, value) {
         setColor((prev) => ({ ...prev, [channel]: value }));
     };
 
