@@ -1,0 +1,270 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  width: auto;
+  height: 100vh;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.add-form button {
+  padding: 12px 24px;
+  background-color: #008751;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.add-form button:hover {
+  background-color: #75e1ba;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filter-buttons button {
+  padding: 8px 20px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-buttons button.active {
+  background-color: #008751;
+  color: white;
+  border-color: #1cb87a;
+}
+
+.expense-item {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expense-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.expense-description {
+  font-weight: 60px;
+  color: #333;
+}
+
+.expense-amount {
+  color: #2e7d32;
+  font-weight: 55px;
+  font-size: medium;
+}
+
+.expense-date {
+  color: #555;
+  font-size: 13px;
+}
+
+.expense-category {
+  text-transform: capitalize;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Category colors */
+.expense-category.food {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.expense-category.transport {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.expense-category.bills {
+  background-color: hsl(47, 44%, 92%);
+  color: #87120598;
+}
+
+.expense-category.entertainment {
+  background-color: hsl(292, 44%, 93%);
+  color: #8e24aa;
+}
+
+.expense-category.others {
+  background-color: #ddd1cbe7;
+  color: #5d4037a8;
+}
+
+.expense-actions {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn {
+  background-color: #d3cdcd;
+}
+
+.delete-btn {
+  background-color: oklab(42.734% 0.14799 0.08112 / 0.779);
+  color: white;
+}
+
+.expense-item input[type="number"] {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #008751;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+}
+
+.task-list {
+  color: black;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #008751;
+}
+
+.stat-label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #008751;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #666;
+  font-size: 14px;
+}
+
+
+
+/* .expense-list {
+  background: rgb(89, 45, 45);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+} */
+
+@media (max-width: 768px) {
+.app {
+  padding: 5px;
+}
+
+.expense-row {
+  flex-direction: row; 
+  align-items: flex-start;
+}
+
+  .expense-description,
+  .expense-amount,
+  .expense-date,
+  .expense-category,
+  .expense-actions {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+
+  .expense-actions {
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
+}
+
