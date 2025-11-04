@@ -60,7 +60,7 @@ body {
 .filter-buttons button {
   padding: 8px 20px;
   border: 2px solid #ddd;
-  background: white;
+  background: rgb(250, 232, 232);
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s;
@@ -86,7 +86,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  background: #fff;
+  background: #f4dddd;
   padding: 10px 15px;
   margin-bottom: 10px;
   border-radius: 8px;
@@ -192,7 +192,7 @@ body {
 .stats {
   display: flex;
   justify-content: space-around;
-  background: white;
+  background: rgb(251, 246, 246);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -246,11 +246,14 @@ body {
 @media (max-width: 768px) {
 .app {
   padding: 5px;
+  width: auto;
+  max-height: fit-content;
 }
 
-.expense-row {
-  flex-direction: row; 
+.add-form, .expense-row {
+  flex-direction: column; 
   align-items: flex-start;
+
 }
 
   .expense-description,
@@ -268,3 +271,33 @@ body {
   }
 }
 
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .expenses, .stats, .add-form {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: auto;
+    height: 100vh;
+  }
+
+  .stats {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  .add-form,
+  .filter-buttons {
+    text-align: center;
+  }
+
+  .add-form input,
+  .add-form select {
+    text-align: center;
+  }
+
+  /* .amount {
+    font-size: 1rem;
+  } */
+}

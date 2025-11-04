@@ -1,6 +1,6 @@
 
 function ExpenseStats({ expenses}) {
-    const total = expenses.reduce((sum, exp) => sum + exp.amount, 0);
+    const total = expenses.reduce((sum, exp) => sum + Number(exp.amount), 0);
     const highest = expenses.length ? Math.max(...expenses.map(expense => expense.amount)) : 0;
 
     return (

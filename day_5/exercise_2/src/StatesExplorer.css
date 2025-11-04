@@ -1,0 +1,66 @@
+
+.state {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  background-color: rgba(45, 44, 44, 0.756);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: linear-gradient(65deg whitesmoke, blue, blue, yellow, yellow); */
+}
+
+.state h1 {
+  text-align: center;
+  color: rgb(211, 89, 24);
+  margin-bottom: 30px;
+}
+
+.search-input {
+  width: 50%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-buttons, .sort-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button, .sort-buttons button {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-buttons button.active, .sort-buttons button.active {
+  background-color: #82511f;
+  color: white;
+  border-color: #e68a59;
+}
+
+.results-count {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.state-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
